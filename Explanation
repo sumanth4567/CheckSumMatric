@@ -1,0 +1,13 @@
+The problem is from leet code.
+And the process is as follows 
+     we need to find whether the matrix taken from user is satisfying the given conditions.
+      1) the matrix can be of any size.
+      2) the sum of first row and sum of the last row should be equal
+      3) same continues for the remaining rows 
+      4) if there are n rows then 1st and nth row sum should be equal and 2nd and n-1th row sum should be equal and the same follows for 
+          remaining rows.
+solution:
+    there are two conditions if the no of rows are even and no of rows are odd.
+    case 1:  the number of rows are even then we just have to run the loop for n/2 times and solve the problem
+    case 2:  the number of rows are odd then also we run the code for n/2 times but we ignore the middle row in the matrix.
+    finally if all the sums of the corresponding rows are equal then print true else false.
